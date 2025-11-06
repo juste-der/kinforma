@@ -1,0 +1,12 @@
+.header-newsletter {
+  font-family: "Inter", sans-serif;
+  font-size: var(--size-small);
+  align-items: center;
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .header-newsletter {
+    display: flex;
+  }
+}
