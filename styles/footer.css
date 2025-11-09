@@ -1,1 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Shrikhand&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    background: #1a1a1a;
+}
+
+footer {
+    background: #707070;
+    color: white;
+    padding: 80px 100px;
+    position: relative;
+}
+
+
+.footer-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.footer-left {
+    flex: 1;
+    max-width: 650px;
+}
+
+.footer-left h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.footer-left p {
+    font-size: 1.15rem;
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+.email-form {
+    display: flex;
+    gap: 20px;
+}
+
+.email-form input {
+    flex: 1;
+    padding: 18px 25px;
+    background: #8a8a8a;
+    border: none;
+    color: #e0e0e0;
+    font-size: 1.05rem;
+    font-family: inherit;
+}
+
+.email-form input::placeholder {
+    color: #c0c0c0;
+}
+
+.email-form button {
+    padding: 18px 50px;
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+    border-radius: 8px;
+}
+
+.email-form button:hover {
+    background: white;
+    color: #707070;
+}
+
+.footer-right {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.footer-links li {
+    margin-bottom: 18px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    opacity: 0.8;
+}
+
+.copyright {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.logo-container {
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+    overflow: hidden;
+    padding: 0 20px;
+}
+.logo {
+    font-size: clamp(4rem, 12vw, 13rem);
+    font-weight: 900;
+    font-style: italic;
+    color: white;
+
+
+}
+
+/* Mobile Layout */
+.footer-mobile {
+    display: none;
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.footer-mobile .footer-links {
+    margin-bottom: 50px;
+}
+
+.footer-mobile .footer-links li {
+    margin-bottom: 25px;
+}
+
+.footer-mobile .footer-links a {
+    font-size: 1.1rem;
+}
+
+.footer-mobile .copyright {
+    margin-bottom: 60px;
+    font-size: 0.95rem;
+}
+
+.footer-mobile .logo {
+    font-size: clamp(3rem, 10vw, 6rem); 
+    letter-spacing: clamp(-4px, -0.4vw, -2px);
+}
+
+@media (max-width: 1024px) {
+    footer {
+        padding: 60px 50px;
+    }
+
+    .footer-left h2 {
+        font-size: 2.3rem;
+    }
+
+      .logo {
+        font-size: clamp(2rem, 8vw, 4rem);
+        letter-spacing: normal;
+        padding: 0 10px;
+    }
+    .logo-container {
+        padding: 0 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    footer {
+        padding: 0;
+    }
+
+    .footer-desktop {
+        display: none;
+    }
+
+    .footer-mobile {
+        display: block;
+    }
+}
