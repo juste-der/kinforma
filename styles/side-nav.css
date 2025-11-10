@@ -1,0 +1,27 @@
+.side-nav-menu-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  width: 0;
+  background-color: antiquewhite;
+  overflow-x: hidden;
+  transition: width 0.4s ease;
+}
+
+.side-nav-menu-container a {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #000;
+  border-top: 1px solid #000000;
+}
+
+.side-nav-menu-container.open {
+  width: 100vw;
+}
+
+.side-nav-menu-container .closebtn {
+  display: none;
+}
