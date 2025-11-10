@@ -32,6 +32,10 @@
   font-weight: var(--weight-bold);
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+.closebtn {
+  display: none;
 }
 
 .icon {
@@ -51,17 +55,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
-}
-
-.language-change {
-  display: none;
-  align-items: center;
-  gap: 1rem;
-}
-
-.language-change .icon {
-  height: 7px;
-  width: 12px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
@@ -81,9 +75,6 @@
   .header-hover-wrapper:hover .icon,
   .header-hover-wrapper:hover .icon-text {
     color: var(--color-black);
-  }
-  .language-change {
-    display: flex;
   }
 
   .icon {

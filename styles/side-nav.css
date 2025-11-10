@@ -48,10 +48,6 @@
   width: 100vw;
 }
 
-.side-nav-menu-container .closebtn {
-  display: none;
-}
-
 @media screen and (min-width: 1024px) {
   .hamburger-btn {
     display: none;

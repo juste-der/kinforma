@@ -2,6 +2,7 @@ const sidenav = document.getElementById("sidenav");
 const menuToggle = document.getElementById("menuToggle");
 const menuIcon = document.getElementById("menuIcon");
 const closeBtn = document.getElementById("closeNav");
+const languageToggle = document.getElementById("languageToggle");
 
 menuToggle.addEventListener("click", () => {
   sidenav.classList.toggle("open");
@@ -19,18 +20,6 @@ closeBtn.addEventListener("click", (e) => {
   menuIcon.src = "assets/icons/hamburger.svg";
 });
 
-// const sidenav = document.getElementById("sidenav");
-// const menuToggle = document.getElementById("menuToggle");
-// const menuIcon = document.querySelector("#menuIcon use");
-
-// menuToggle.addEventListener("click", () => {
-//   sidenav.classList.toggle("open");
-
-//   if (sidenav.classList.contains("open")) {
-//     // Switch to "X" icon
-//     menuIcon.setAttribute("href", "assets/icons/icons.svg#icon-close");
-//   } else {
-//     // Switch back to hamburger
-//     menuIcon.setAttribute("href", "assets/icons/icons.svg#icon-hamburger");
-//   }
-// });
+languageToggle.addEventListener("click", () => {
+  languageToggle.classList.toggle("open");
+});

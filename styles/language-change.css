@@ -1,0 +1,47 @@
+.language-change {
+  display: none;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+}
+
+.language-change .current-lang {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: 120%;
+  display: none;
+  padding: 0.5rem 0;
+}
+
+.language-change .icon {
+  height: 7px;
+  width: 12px;
+}
+
+.language-change .flags {
+  display: flex;
+  flex-direction: column;
+}
+
+.language-change.open .lang-dropdown {
+  display: flex;
+}
+
+.arrow {
+  transition: transform 0.3 ease;
+}
+
+.language-change.open .arrow {
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 1024px) {
+  .language-change {
+    display: flex;
+  }
+}
