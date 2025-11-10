@@ -6,7 +6,7 @@
   display: flex;
 }
 .header-newsletter a {
-  color: black;
+  color: var(--color-black);
 }
 
 .site-header {
@@ -22,25 +22,27 @@
   flex: 1 0 10rem;
   font-family: var(--font-logo);
   text-decoration: none;
-  color: black;
+  color: var(--color-black);
   font-size: 1.25rem;
   align-items: center;
   justify-content: center;
 }
 
-.search-bar,
-.side-nav-menu-container,
-.profile-page,
-.shopping-cart {
-  height: 2rem;
+.icon {
+  color: var(--color-black);
   width: 2rem;
+  height: 2rem;
 }
 
-/* @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .site-header {
-    background-color: 0;
+    background: transparent;
+    color: var(--color-white);
+  }
+  .site-header a {
+    color: var(--color-white);
   }
   body {
-    background: aqua;
+    background: pink !important;
   }
-} */
+}
