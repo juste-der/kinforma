@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  background: var(--color-white);
 }
 .header-newsletter a {
   color: var(--color-black);
@@ -20,6 +21,7 @@
   height: 4rem;
   padding: 0 1.25rem;
 }
+
 .header-logo {
   display: flex;
   flex: 1 0 10rem;
@@ -37,10 +39,24 @@
   width: 2rem;
   height: 2rem;
 }
+.icon-text {
+  display: none;
+  font-family: var(--font-body);
+}
+
+.search-bar,
+.profile-page,
+.shopping-cart {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 
 @media screen and (min-width: 1024px) {
   .site-header {
     color: var(--color-white);
+    padding: 0 4rem;
+    height: 4.5rem;
   }
   .site-header a {
     color: var(--color-white);
@@ -49,14 +65,24 @@
     background: var(--color-white);
   }
   .header-hover-wrapper:hover a,
-  .header-hover-wrapper:hover .icon {
+  .header-hover-wrapper:hover .icon,
+  .header-hover-wrapper:hover .icon-text {
     color: var(--color-black);
   }
   .icon {
     color: var(--color-white);
   }
+  .icon-text {
+    display: contents;
+  }
+  .profile-page {
+    margin-right: 1rem;
+  }
+  .header-logo {
+    margin-left: 8.75rem;
+  }
 
   body {
-    background: pink !important;
+    background: darkblue !important;
   }
 }

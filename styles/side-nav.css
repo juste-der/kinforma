@@ -66,10 +66,15 @@
   }
   .nav-top {
     flex-direction: row;
+    gap: 1.5rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
   }
   .nav-top a {
     border-top: none;
     color: var(--color-white);
+    padding: 0 1.125rem;
   }
   .nav-bottom {
     display: none;
