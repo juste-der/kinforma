@@ -11,6 +11,9 @@
 
 .site-header {
   display: flex;
+  position: relative;
+  z-index: 10;
+  background: transparent;
   justify-content: center;
   align-items: center;
   gap: 8px;
@@ -24,6 +27,7 @@
   text-decoration: none;
   color: var(--color-black);
   font-size: 1.25rem;
+  font-weight: var(--weight-bold);
   align-items: center;
   justify-content: center;
 }
@@ -36,12 +40,22 @@
 
 @media screen and (min-width: 1024px) {
   .site-header {
-    background: transparent;
     color: var(--color-white);
   }
   .site-header a {
     color: var(--color-white);
   }
+  .header-hover-wrapper:hover {
+    background: var(--color-white);
+  }
+  .header-hover-wrapper:hover a,
+  .header-hover-wrapper:hover .icon {
+    color: var(--color-black);
+  }
+  .icon {
+    color: var(--color-white);
+  }
+
   body {
     background: pink !important;
   }
