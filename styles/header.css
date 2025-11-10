@@ -39,6 +39,7 @@
   width: 2rem;
   height: 2rem;
 }
+
 .icon-text {
   display: none;
   font-family: var(--font-body);
@@ -52,11 +53,23 @@
   gap: 4px;
 }
 
+.language-change {
+  display: none;
+  align-items: center;
+  gap: 1rem;
+}
+
+.language-change .icon {
+  height: 7px;
+  width: 12px;
+}
+
 @media screen and (min-width: 1024px) {
   .site-header {
     color: var(--color-white);
     padding: 0 4rem;
     height: 4.5rem;
+    gap: 1.5rem;
   }
   .site-header a {
     color: var(--color-white);
@@ -69,6 +82,10 @@
   .header-hover-wrapper:hover .icon-text {
     color: var(--color-black);
   }
+  .language-change {
+    display: flex;
+  }
+
   .icon {
     color: var(--color-white);
   }
@@ -79,7 +96,7 @@
     margin-right: 1rem;
   }
   .header-logo {
-    margin-left: 8.75rem;
+    margin-left: 15rem;
   }
 
   body {
