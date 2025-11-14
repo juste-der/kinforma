@@ -75,4 +75,15 @@
   .nav-bottom {
     display: none;
   }
+
+  /*Scrolled header */
+  .site-header.scrolled ~ .side-nav-menu-container {
+    display: none;
+  }
+  .site-header.scrolled .products-btn {
+    display: contents !important;
+  }
+  .site-header.show-products ~ .side-nav-menu-container {
+    display: flex;
+  }
 }

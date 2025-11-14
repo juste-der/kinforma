@@ -1,9 +1,20 @@
+body {
+  height: 1500px !important;
+}
+
+.header-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .header-newsletter {
   font-family: "Inter", sans-serif;
   font-size: var(--size-small);
   justify-content: center;
   align-items: center;
   display: flex;
+  height: 28px;
   background: var(--color-white);
 }
 .header-newsletter a {
@@ -44,7 +55,8 @@
   height: 2rem;
 }
 
-.icon-text {
+.icon-text,
+.products-btn {
   display: none;
   font-family: var(--font-body);
 }
@@ -68,12 +80,13 @@
   .site-header a {
     color: var(--color-white);
   }
-  .header-hover-wrapper:hover {
+  .header-wrapper:hover {
     background: var(--color-white);
   }
-  .header-hover-wrapper:hover a,
-  .header-hover-wrapper:hover .icon,
-  .header-hover-wrapper:hover .icon-text {
+  .header-wrapper:hover a,
+  .header-wrapper:hover .icon,
+  .header-wrapper:hover .icon-text,
+  .header-wrapper:hover .products-btn {
     color: var(--color-black);
   }
 
@@ -91,6 +104,9 @@
   }
 
   body {
-    background: darkblue !important;
+    background: pink !important;
+  }
+  .site-header.scrolled .header-logo {
+    margin-left: 7.8rem;
   }
 }

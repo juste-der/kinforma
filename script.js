@@ -3,6 +3,10 @@ const menuToggle = document.getElementById("menuToggle");
 const menuIcon = document.getElementById("menuIcon");
 const closeBtn = document.getElementById("closeNav");
 const languageToggle = document.getElementById("languageToggle");
+const header = document.querySelector(".site-header");
+const productsBtn = document.querySelector(".products-btn");
+
+/*side bar menu */
 
 menuToggle.addEventListener("click", () => {
   sidenav.classList.toggle("open");
@@ -22,4 +26,19 @@ closeBtn.addEventListener("click", (e) => {
 
 languageToggle.addEventListener("click", () => {
   languageToggle.classList.toggle("open");
+});
+
+/*scroll menu */
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 30) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
+productsBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  header.classList.toggle("show-products");
 });
