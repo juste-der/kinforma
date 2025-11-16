@@ -1,5 +1,5 @@
 .container {
-    width: 100%;
+    width: 100vw;
     background: white;
     text-align:center;
 }
@@ -18,7 +18,7 @@ h1 {
 .carousel-container {
     display: flex;
     justify-content: center;
-    margin: 0 0 6rem 0;
+
 }
 
 .carousel {
@@ -92,12 +92,12 @@ h1 {
     color: white;
 }
 
-@media (max-width: 768px) {
-    .container {
-        padding: 40px 24px;
-    }
+.coming-up{
+    margin-bottom: 8rem;
+}
 
-    h1 {
+@media (max-width: 768px) {
+   h1 {
         font-size: 2rem;
         margin-bottom: 60px;
     }
@@ -330,7 +330,7 @@ footer {
     text-align: right;
 }
 
-.coming-up {
+.coming-up-header {
     font-size: var(--size-h3);    
     font-weight: var(--weight-bold);
     color: black;
@@ -345,13 +345,15 @@ footer {
     font-size:var( --size-ingress);   
     font-weight: bold;
     letter-spacing: 2px;
-    padding: 2.5px 3.5px;
+    padding: 2rem 1rem; 
+    font-family: var(--font-mono);
 }
 
-.kinforma-top {
+.kinforma-top,
+.kinforma-bottom {
     font-style: italic;
     font-size: var(--size-ingress);
-
+    font-family: var(--font-logo);
 }
 
 .coming-up-main {
@@ -399,20 +401,20 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5px 3.5px;
+    padding: 2.5rem 1rem;
     font-size:var( --size-ingress);   
     font-weight: bold;
     letter-spacing: 2px;
 }
 
-.kinforma-bottom {
-    font-style: italic;
-}
+
 
 .background-image{
     background-image: url(/assets/icons/images/unsplash_20Bxjm6XrYM.png);
     color: white;
+    
 }
+
 
 @media (max-width: 500px) {
    .coming-up-title{
