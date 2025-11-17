@@ -1,11 +1,14 @@
-body {
+/* body {
   height: 1500px !important;
-}
+} */
 
 .header-wrapper {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
+  background: var(--color-white);
 }
 
 .header-newsletter {
@@ -71,6 +74,9 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  .header-wrapper {
+    background: transparent;
+  }
   .site-header {
     color: var(--color-white);
     padding: 0 4rem;

@@ -31,7 +31,7 @@ languageToggle.addEventListener("click", () => {
 /*scroll menu */
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 30) {
+  if (window.scrollY > 1) {
     header.classList.add("scrolled");
   } else {
     header.classList.remove("scrolled");
