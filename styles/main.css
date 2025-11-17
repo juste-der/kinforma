@@ -4,6 +4,7 @@
 @import url("header.css");
 @import url("side-nav.css");
 @import url("language-change.css");
+@import url("product-display.css");
 
 * {
   box-sizing: border-box;

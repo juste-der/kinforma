@@ -108,11 +108,16 @@
   .header-logo {
     margin-left: 15rem;
   }
-
-  body {
-    background: pink !important;
+  .site-header.scrolled {
+    background: var(--color-white);
+    color: var(--color-black);
   }
+
   .site-header.scrolled .header-logo {
     margin-left: 7.8rem;
+    color: var(--color-black);
+  }
+  .site-header.scrolled .icon {
+    color: var(--color-black);
   }
 }

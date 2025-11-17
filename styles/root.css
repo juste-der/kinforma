@@ -1,8 +1,16 @@
+@font-face {
+  font-family: "Thunder";
+  src: url("../assets/fonts/Thunder-BoldLC.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   /* Fonts */
   --font-logo: "Shrikhand", serif;
   --font-body: "IBM Plex Sans", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
+  --font-thunder: "Thunder", sans-serif;
 
   /* Font weights */
   --weight-regular: 400;
@@ -12,7 +20,8 @@
   /* Font sizes */
   --size-h1: 6rem;
   --size-h1-mb: 2.25rem;
-  --size-h2: 4rem;
+  --size-h2: 6rem;
+  --size-h2-mb: 3rem;
   --size-h3: 3rem;
   --size-ingress: 1.5rem;
   --size-ingress-mb: 1.125rem;
@@ -25,6 +34,7 @@
   --color-white: #fafafa;
   --color-black: #1b1b1b;
   --color-grey: #696969;
+  --color-orange: #fc5006;
 
   /*sizing */
   --header-height: calc(64px + 28px);
