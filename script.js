@@ -5,11 +5,6 @@ const closeBtn = document.getElementById("closeNav");
 const languageToggle = document.getElementById("languageToggle");
 const header = document.querySelector(".site-header");
 const productsBtn = document.querySelector(".products-btn");
-const buttons = document.querySelectorAll(".filter-buttons .btn");
-const slider = document.querySelector(".jacket-slider");
-const slides = document.querySelectorAll(".slide");
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
 
 /*side bar menu */
 
@@ -48,31 +43,54 @@ productsBtn.addEventListener("click", (e) => {
   header.classList.toggle("show-products");
 });
 
-/* filter button click */
+/* reusable click active function */
 
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    // Remove active class from all
-    buttons.forEach((btn) => btn.classList.remove("active"));
-
-    // Add active to the clicked one
-    button.classList.add("active");
+function activeOnClick(selector) {
+  const items = document.querySelectorAll(selector);
+  items.forEach((item) => {
+    item.addEventListener("click", () => {
+      items.forEach((i) => i.classList.remove("active"));
+      item.classList.add("active");
+    });
   });
-});
+}
+
+function setActiveByIndex(items, index) {
+  items.forEach((item, i) => {
+    item.classList.toggle("active", i === index);
+  });
+}
+
+activeOnClick(".filter-buttons .btn");
+activeOnClick(".dot-container .dot");
 
 /* product carousel */
+function initProductSlider(card) {
+  const slider = card.querySelector(".slider");
+  const slides = card.querySelectorAll(".slide");
+  const prevBtn = card.querySelector(".prev");
+  const nextBtn = card.querySelector(".next");
+  const progressSegments = card.querySelectorAll(
+    ".slide-progress .progress-segment"
+  );
 
-let index = 0;
+  let index = 0;
 
-function updateSlider() {
-  slider.style.transform = `translateX(-${index * 100}%)`;
+  function updateSlider() {
+    slider.style.transform = `translateX(-${index * 100}%)`;
+    setActiveByIndex(progressSegments, index);
+  }
+  nextBtn.addEventListener("click", () => {
+    index = (index + 1) % slides.length;
+    updateSlider();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    index = (index - 1 + slides.length) % slides.length;
+    updateSlider();
+  });
 }
-nextBtn.addEventListener("click", () => {
-  index = (index + 1) % slides.length;
-  updateSlider();
-});
 
-prevBtn.addEventListener("click", () => {
-  index = (index - 1 + slides.length) % slides.length;
-  updateSlider();
+document.querySelectorAll(".product-card").forEach((card) => {
+  initProductSlider(card);
 });

@@ -7,6 +7,7 @@
   flex-direction: column;
   gap: 1rem;
   padding: 0 1.25rem;
+  margin-bottom: 14px;
 }
 
 .product-display .top-content h2 {
@@ -38,20 +39,19 @@
 .product-carousel {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  background: #e7e7e7;
+  flex-wrap: wrap;
 }
 
 .product-card {
   width: 100%;
   position: relative;
-  max-width: 450px;
   overflow: hidden;
   max-width: 393px;
   margin: 0 auto;
 }
-.jacket-slider {
+.slider {
   display: flex;
   transition: transform 0.4s ease-in-out;
   transform: translateX(0);
@@ -63,11 +63,16 @@
   transition: transform 0.5s ease-in-out;
   justify-content: center;
   align-items: center;
+  background: #e7e7e7;
 }
 .slide img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+.product-card:last-child .slide:last-child img {
+  object-fit: cover;
+  object-position: 10% 100%;
 }
 .prev,
 .next {
@@ -88,7 +93,86 @@
   right: 10px;
 }
 
+.dot-container {
+  display: flex;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  gap: 6px;
+  margin-bottom: 100px;
+  margin-right: 20px;
+}
+.dot {
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--color-black);
+  opacity: 0.2;
+}
+
+.dot-1 {
+  background: var(--color-white);
+}
+.dot-2 {
+  background: #a63a01;
+}
+.dot-3 {
+  background: #a19f9f;
+}
+.dot-container .dot.active {
+  opacity: 1;
+}
+
+.slide-progress {
+  display: flex;
+  max-width: 393px;
+  height: 17px;
+}
+.progress-segment {
+  width: 131px;
+  border: 1px solid var(--color-black);
+}
+.progress-segment.active {
+  background: var(--color-orange);
+}
+
+.bottom-products-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--color-black);
+  border-top: none;
+}
+.bottom-products-card h4 {
+  font-size: var(--size-h4-mb);
+  font-family: var(--font-mono);
+}
+.bottom-products-card button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: none;
+  background: transparent;
+  font-family: var(--font-mono);
+  cursor: pointer;
+}
+
 @media screen and (min-width: 1024px) {
+  .product-carousel {
+    gap: 1rem;
+    justify-content: center;
+  }
+  .product-card {
+    max-width: 318px;
+    margin: 0;
+  }
+  .slide {
+    height: 510px;
+  }
+  .product-carousel .icon {
+    color: var(--color-black);
+  }
   .product-display {
     margin-top: 100px;
   }
