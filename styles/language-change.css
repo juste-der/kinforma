@@ -1,5 +1,5 @@
 .language-change {
-  display: none;
+  display: flex;
   position: relative;
   align-items: center;
   cursor: pointer;
@@ -13,7 +13,7 @@
 
 .lang-dropdown {
   position: absolute;
-  top: 120%;
+  top: 80%;
   display: none;
   padding: 0.5rem 0;
 }
