@@ -54,6 +54,7 @@ function activeOnClick(selector) {
     });
   });
 }
+activeOnClick(".filter-buttons .btn");
 
 function setActiveByIndex(items, index) {
   items.forEach((item, i) => {
@@ -61,25 +62,27 @@ function setActiveByIndex(items, index) {
   });
 }
 
-activeOnClick(".filter-buttons .btn");
-activeOnClick(".dot-container .dot");
+/*product carousel */
 
-/* product carousel */
-function initProductSlider(card) {
+function initProductCard(card) {
+  const product = card.dataset.product;
   const slider = card.querySelector(".slider");
-  const slides = card.querySelectorAll(".slide");
+  const slides = card.querySelectorAll(".slide img");
   const prevBtn = card.querySelector(".prev");
   const nextBtn = card.querySelector(".next");
   const progressSegments = card.querySelectorAll(
     ".slide-progress .progress-segment"
   );
+  const colorDots = card.querySelectorAll(".dot-container .dot");
 
   let index = 0;
 
+  /*shift slider to correct image */
   function updateSlider() {
     slider.style.transform = `translateX(-${index * 100}%)`;
     setActiveByIndex(progressSegments, index);
   }
+
   nextBtn.addEventListener("click", () => {
     index = (index + 1) % slides.length;
     updateSlider();
@@ -89,8 +92,28 @@ function initProductSlider(card) {
     index = (index - 1 + slides.length) % slides.length;
     updateSlider();
   });
-}
 
-document.querySelectorAll(".product-card").forEach((card) => {
-  initProductSlider(card);
-});
+  /*load images */
+
+  function loadColorImages(color) {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].src = `assets/products/${product}/${color}/${i + 1}.png`;
+    }
+    index = 0;
+    updateSlider();
+  }
+
+  /*update dots */
+
+  colorDots.forEach((dot) => {
+    dot.addEventListener("click", () => {
+      colorDots.forEach((d) => d.classList.remove("active"));
+      dot.classList.add("active");
+
+      loadColorImages(dot.dataset.color);
+    });
+  });
+
+  loadColorImages(colorDots[0].dataset.color);
+}
+document.querySelectorAll(".product-card").forEach(initProductCard);
