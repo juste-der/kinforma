@@ -133,7 +133,7 @@
   border: 1px solid var(--color-black);
 }
 .progress-segment.active {
-  background: var(--color-orange);
+  background: var(--color-black);
 }
 
 .bottom-products-card {
@@ -164,7 +164,7 @@
     justify-content: center;
   }
   .product-card {
-    max-width: 318px;
+    max-width: 348px;
     margin: 0;
   }
   .slide {
@@ -178,11 +178,22 @@
   }
   .product-display .top-content h2 {
     font-size: var(--size-h2);
+    top: 40px;
   }
   .product-display .top-content {
     justify-content: space-between;
     flex-direction: row;
     gap: 0;
     padding: 0 3.75rem;
+    position: relative;
+    z-index: 1;
+  }
+  .product-carousel {
+    position: relative;
+    z-index: 10;
+    margin-top: -40px;
+  }
+  .filter-buttons {
+    align-items: flex-start;
   }
 }
