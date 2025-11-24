@@ -368,49 +368,6 @@ footer {
 }
 
 
-/* THE DROP Section */
-.the-drop {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 20px;
-    overflow: hidden;
-}
-
-.the-drop > img:first-of-type {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-
-.the-drop > img:nth-of-type(2) {
-    width: 150px;
-    height: auto;
-    z-index: 2;
-    margin-bottom: 40px;
-}
-
-.date-container {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    margin-bottom: 20px;
-}
-
-.date-container img {
-    width: 80px;
-    height: auto;
-}
 
 .stay-tuned {
     background-color: transparent;
@@ -573,4 +530,109 @@ footer {
     color: #e91e63;
     border:2px solid #e91e63;
     font-weight: 700;
+}
+
+
+.stay-tuned {
+    background-color: transparent;
+    color:#e91e63;
+    border: 2px solid #e91e63;
+    padding: 14px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 2;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+.stay-tuned:hover {
+    background: #c2185b;
+    transform: scale(1.05);
+    color: white;
+}
+@media (max-width: 768px) {
+    .the-drop {
+        min-height: 80vh;
+        padding: 40px 15px;
+    }
+
+    .the-drop > img:nth-of-type(2) {
+        width: 120px;
+        margin-bottom: 30px;
+    }
+
+    .date-container .images img {
+        width: 60px;
+    }
+
+    .stay-tuned {
+        padding: 12px 35px;
+        font-size: 0.95rem;
+    }
+}
+
+
+/* THE DROP Section */
+.the-drop {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    overflow: hidden;
+    
+}
+
+
+.the-drop > img:first-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+.the-drop > img:nth-of-type(2) {
+    width: 150px;
+    height: auto;
+    z-index: 2;
+    margin-bottom: 40px;
+}
+
+
+.date-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    gap: 10px;             
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+
+.date-container .images {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.date-container .images img {
+    width: 80px;
+    height: auto;
+}
+
+
+.date-container p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    color:white;
 }
