@@ -1,9 +1,9 @@
 :root {
-  /* Fonts */
-  --font-logo: "Shrikhand", serif;
-  --font-body: "IBM Plex Sans", sans-serif;
-  --font-mono: "IBM Plex Mono", monospace;
-
+    /* Fonts */
+    --font-logo: "Shrikhand", serif;
+    --font-body: "IBM Plex Sans", sans-serif;
+    --font-mono: "IBM Plex Mono", monospace;
+    --font-thunder: "Thunder", sans-serif;
   /* Font weights */
   --weight-regular: 400;
   --weight-medium: 500;

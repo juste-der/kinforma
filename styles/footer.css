@@ -510,6 +510,7 @@ footer {
     flex-direction: column; 
     gap: 16px;
     color: #696969;
+    font-family: var(--font-thunder "Thunder", sans-serif);
 }
 
 .sustainable h3 {
