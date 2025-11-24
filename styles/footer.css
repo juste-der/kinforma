@@ -368,22 +368,94 @@ footer {
 }
 
 
-
+/* THE DROP Section */
 .the-drop {
+    position: relative;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    line-height: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    overflow: hidden;
 }
 
-.performance img,
-.the-drop img {
+.the-drop > img:first-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
     object-fit: cover;
+    z-index: 1;
 }
 
+.the-drop > img:nth-of-type(2) {
+    width: 150px;
+    height: auto;
+    z-index: 2;
+    margin-bottom: 40px;
+}
+
+.date-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.date-container img {
+    width: 80px;
+    height: auto;
+}
+
+.stay-tuned {
+    background-color: transparent;
+    color:#e91e63;
+    border: none;
+    padding: 14px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 2;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    border:2px solid #e91e63;
+}
+
+.stay-tuned:hover {
+    background: #c2185b;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    .the-drop {
+        min-height: 80vh;
+        padding: 40px 15px;
+    }
+    
+    .the-drop > img:nth-of-type(2) {
+        width: 120px;
+        margin-bottom: 30px;
+    }
+    
+    .date-container {
+        gap: 10px;
+    }
+    
+    .date-container img {
+        width: 60px;
+    }
+    
+    .stay-tuned {
+        padding: 12px 35px;
+        font-size: 0.95rem;
+    }
+}
 
 @media (max-width: 500px) {
    .coming-up-title{
@@ -441,4 +513,64 @@ footer {
     .footer-mobile {
         display: block;
     }
+}
+
+
+.Urban-performance-section h2 {
+    width: 100%;
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 40px 20px;
+    color: #1a1a1a;
+}
+
+.Urban-performance-section img {
+    width: 100%;
+    margin: 0;
+    height: auto ;
+    display: block;
+    object-fit: cover;
+    padding: 0;
+}
+
+
+.sustainable {
+    background: url("/assets/icons/images/Hållbarhet2 1.png") center/cover no-repeat;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.sustainable .content {
+    display: flex;
+    flex-direction: column; 
+    gap: 16px;
+    color: #696969;
+}
+
+.sustainable h3 {
+    font-size: 3rem;
+}
+
+.sustainable-button {
+    align-self: center;
+    width: fit-content;
+    height: auto;
+    padding: 0.75rem 1.5rem;
+    max-width: 100%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: #e91e63;
+    border:2px solid #e91e63;
+    font-weight: 700;
 }
