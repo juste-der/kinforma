@@ -67,7 +67,7 @@ h1 {
     color: #1a1a1a;
     margin: 60px 0;
     font-weight: 400;
-    font-family: var(--font-body);
+    font-family: var(--font-mono);;
 }
 
 .cta-button {
@@ -75,15 +75,15 @@ h1 {
     padding: 16px 48px;
     font-size: 1.1rem;
     font-weight: 500;
-    color: #1a1a1a;
+    color:var(--color-orange);
     background: white;
-    border: 2px solid #1a1a1a;
+    border: 2px solid var(--color-orange);
     border-radius: 4px;
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
     margin-bottom: 3rem;
-    font-family: var(--font-body);
+    font-family: var(--font-mono);
 }
 
 .cta-button:hover {
@@ -95,56 +95,18 @@ h1 {
     margin-bottom: 8rem;
 }
 
-@media (max-width: 768px) {
-   h1 {
-        font-size: 2rem;
-        margin-bottom: 60px;
-    }
-
-    .description {
-        font-size: 1.1rem;
-        margin: 60px 0 40px 0;
-    }
-
-    .carousel {
-        width: 95vw;
-    }
-
-    .card {
-        height: 380px;
-        flex: 0 0 250px;
-    }
-
-    .card img {
-        height: 330px;
-    }
-
-    .cta-button {
-        padding: 14px 36px;
-        font-size: 1rem;
-    }
-}
-
-
-
 /* Footer*/
 
 
 
 footer {
-    background: #707070;
+    background:var( --color-bg);
     color: white;
     padding: 80px 100px;
     position: relative;
+    font-family:var(--font-mono);
 }
 
-
-.footer-left,
-.footer-links,
-.footer-desktop,
-.footer-right{
-    font-family:var(--font-body);
-}
 
 .footer-desktop {
     display: flex;
@@ -193,15 +155,14 @@ footer {
 
 .email-form button {
     padding: 18px 50px;
-    background: transparent;
-    border: 3px solid white;
-    color: white;
+    background-color:var(--color-orange);
     font-size: 1.05rem;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s;
     white-space: nowrap;
-    border-radius: 8px;
+    color: white;
+    font-family: var(--font-mono);
 }
 
 .email-form button:hover {
@@ -249,12 +210,11 @@ footer {
     padding: 0 20px;
 }
 .logo {
-    font-size: clamp(4rem, 12vw, 13rem);
-    font-weight: 900;
+    font-size: 15rem;
+    font-family: var(--font-logo);
     font-style: italic;
+    font-weight: var(--weight-bold);
     color: white;
-
-
 }
 
 /* Mobile Layout */
@@ -389,99 +349,16 @@ footer {
 }
 
 
-@media (max-width: 768px) {
-    .the-drop {
-        min-height: 80vh;
-        padding: 40px 15px;
-    }
-    
-    .the-drop > img:nth-of-type(2) {
-        width: 120px;
-        margin-bottom: 30px;
-    }
-    
-    .date-container {
-        gap: 10px;
-    }
-    
-    .date-container img {
-        width: 60px;
-    }
-    
-    .stay-tuned {
-        padding: 12px 35px;
-        font-size: 0.95rem;
-    }
-}
-
-@media (max-width: 500px) {
-   .coming-up-title{
-    font-size:var(--size-h2);
-   }
-   .coming-up{
-    font-size: 2rem; 
-   }
-   .top-bar,
-   .bottom-bar{
-   font-size:var(--size-small);
-   }
-}
-
-@media (max-width: 350px){
-    .coming-up-title{
-        font-size:var(--size-h3);
-       }
-}
-
-
-
-@media (max-width: 1024px) {
-    footer {
-        padding: 60px 50px;
-    }
-
-    .footer-left h2 {
-        font-size: 2.3rem;
-    }
-
-      .logo {
-        font-size: clamp(2rem, 8vw, 4rem);
-        letter-spacing: normal;
-        padding: 0 10px;
-    }
-    .logo-container {
-        padding: 0 10px;
-    }
-  .coming-up{
-    display: none;
-     }
-}
-
-
-@media (max-width: 768px) {
-    footer {
-        padding: 0;
-    }
-
-    .footer-desktop {
-        display: none;
-    }
-
-    .footer-mobile {
-        display: block;
-    }
-}
-
-
-.Urban-performance-section h2 {
+ h2 {
     width: 100%;
     text-align: left;
-    font-size: 2.5rem;
-    font-weight: 900;
-    letter-spacing: 2px;
+    font-size: var(--size-h2-mb);
     margin: 0;
     padding: 40px 20px;
     color: #1a1a1a;
+    font-weight:700;
+    font-family: var(--font-thunder);
+    letter-spacing: -4px;
 }
 
 .Urban-performance-section img {
@@ -536,9 +413,8 @@ footer {
 
 
 .stay-tuned {
-    background-color: transparent;
-    color:#e91e63;
-    border: 2px solid #e91e63;
+    background-color:var(--color-orange);
+    color:#FAFAFA;
     padding: 14px 40px;
     font-size: 1rem;
     font-weight: 600;
@@ -586,7 +462,7 @@ footer {
     justify-content: center;
     padding: 60px 20px;
     overflow: hidden;
-    
+    font-family: var(--font-mono);
 }
 
 

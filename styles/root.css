@@ -6,11 +6,12 @@
 }
 
 :root {
-    /* Fonts */
-    --font-logo: "Shrikhand", serif;
-    --font-body: "IBM Plex Sans", sans-serif;
-    --font-mono: "IBM Plex Mono", monospace;
-    --font-thunder: "Thunder", sans-serif;
+  /* Fonts */
+  --font-logo: "Shrikhand", serif;
+  --font-body: "IBM Plex Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+  --font-thunder: "Thunder", sans-serif;
+
   /* Font weights */
   --weight-regular: 400;
   --weight-medium: 500;
@@ -18,13 +19,25 @@
 
   /* Font sizes */
   --size-h1: 6rem;
-  --size-h2: 4rem;
+  --size-h1-mb: 2.25rem;
+  --size-h2: 6rem;
+  --size-h2-mb: 3rem;
   --size-h3: 3rem;
+  --size-h4: 1.5rem;
+  --size-h4-mb: 1.25rem;
   --size-ingress: 1.5rem;
+  --size-ingress-mb: 1.125rem;
   --size-body: 1.125rem;
   --size-small: 0.75rem;
 
   /* Colors */
   --color-bg: #333333; /* Background color */
   --color-dark: #1f1f1f; /* Dark color */
+  --color-white: #fafafa;
+  --color-black: #1b1b1b;
+  --color-grey: #696969;
+  --color-orange: #e50337;
+
+  /*sizing */
+  --header-height: calc(64px + 28px);
 }
