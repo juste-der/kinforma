@@ -133,7 +133,7 @@
     }
     
     .desktop-container {
-        visibility: visible;
+        visibility: visible;    
         opacity: 1;
         height: auto;
         overflow: visible;
