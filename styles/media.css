@@ -119,7 +119,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
     }
     .sustain-content{
         width: 100%;
@@ -143,12 +142,14 @@
         font-weight: 600;
         margin: 0;
         padding: 0 1.5rem;
+        letter-spacing: -1px;
     
     }
     .sustain-header{
         font-size: 2rem;
         font-weight: 700;
         text-align: center;
+        letter-spacing: -1px;
     }
     .sustain-button{
         margin: 0;
