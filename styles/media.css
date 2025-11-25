@@ -29,7 +29,7 @@
     .footer-mobile {
         display: block;
     }
-}
+
     .the-drop {
         min-height: 80vh;
         padding: 40px 15px;
@@ -109,6 +109,55 @@
     .img-desktop {
         display: none !important;
     }
+    .sustain-desktop-img {
+        display: none;
+    }        
+    .sustain-section {
+        background-image: url(/assets/icons/images/jacket.png);
+        background-position: center top;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .sustain-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        background-color:#ffffff8f;
+        padding: 0;
+        
+    }
+    .sustain-mobile-text{
+        font-size: 1.5rem;
+        color: #323232;
+        display: inline;
+        font-family: var(--font-thunder);
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 0;
+        padding: 0 1.5rem;
+    
+    }
+    .sustain-header{
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    .sustain-button{
+        margin: 0;
+    }
+    .sustain-desktop-text,
+    .sustain-desktop-text-right{
+        display:none;
+    }
+}
     
     @media (min-width: 768px) {
         .img-mobile {
@@ -118,12 +167,11 @@
             display: block !important;
         }
         .the-drop {
-
             display: none;
         }
-    
-    }
 
+        }
+    
 @media (min-width: 768px) {
     .the-drop {
         visibility: hidden;
