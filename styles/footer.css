@@ -609,7 +609,6 @@ footer {
     color:var(--color-orange);
     background:transparent;
     border: 2px solid var(--color-orange);
-    border-radius: 4px;
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
