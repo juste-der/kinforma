@@ -117,4 +117,25 @@
         .img-desktop {
             display: block !important;
         }
+        .the-drop {
+
+            display: none;
+        }
+    
     }
+
+@media (min-width: 768px) {
+    .the-drop {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .desktop-container {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        overflow: visible;
+    }
+}

@@ -15,52 +15,6 @@ h1 {
     text-align: left;
 }
 
-.carousel-container {
-    display: flex;
-    justify-content: center;
-}
-
-.carousel {
-    display: flex;
-    column-gap: 0.5rem;
-    width: 90vw;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 1rem;
-}
-
-.carousel::-webkit-scrollbar {
-    height: 8px;
-}
-
-.carousel::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 4px;
-}
-
-.carousel::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
-}
-
-.carousel::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-.card {
-    height: 450px;
-    flex: 0 0 290px;
-    scroll-snap-align: start;
-}
-
-.card img {
-    width: 100%;
-    height: 390px;
-    object-fit: cover;
-    background-color: #e0e0e0;
-}
-
 .description {
     font-size: 1.25rem;
     line-height: 1.6;
@@ -201,21 +155,25 @@ footer {
     font-size: 1rem;
     line-height: 1.6;
 }
-
 .logo-container {
     width: 100%;
     margin-top: 60px;
     text-align: center;
-    overflow: hidden;
-    padding: 0 20px;
+    
 }
+
 .logo {
-    font-size: 15rem;
-    font-family: var(--font-logo);
-    font-style: italic;
-    font-weight: var(--weight-bold);
-    color: white;
+    display: inline-block;
+    width: 95%;
+    max-width: none;  
 }
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+
 
 /* Mobile Layout */
 .footer-mobile {
@@ -327,8 +285,6 @@ footer {
     letter-spacing: 2px;
 }
 
-
-
 .stay-tuned {
     background-color: transparent;
     color:#e91e63;
@@ -361,13 +317,18 @@ footer {
     letter-spacing: -4px;
 }
 
+.Urban-performance-section{
+    font-family: Bold LC;
+    
+}
+
 .Urban-performance-section img {
     width: 100%;
     margin: 0;
     height: auto ;
     display: block;
     object-fit: cover;
-    padding: 0;
+    padding: 0; 
 }
 
 
@@ -452,19 +413,6 @@ footer {
 
 
 /* THE DROP Section */
-.the-drop {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 20px;
-    overflow: hidden;
-    font-family: var(--font-mono);
-}
-
 
 .the-drop > img:first-of-type {
     position: absolute;
@@ -518,4 +466,67 @@ footer {
 .sustain{
     width: 100%;
     height: auto;
+}
+
+.desktop-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+    
+.the-drop {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    overflow: hidden;
+    font-family: var(--font-mono);
+}
+
+
+.desktop-container {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+
+.desktop-left {
+    position: relative;
+    width: 50%;
+}
+
+.desktop-drop-left {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.desktop-drop-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%); 
+    text-align: center;
+    color: white;
+    padding: 10px;
+    letter-spacing: 2%;
+    font-family: var(--font-mono);
+    font-weight: var(--weight-medium);
+    font-size: var(--size-ingress-mb);
+}
+
+.desktop-drop-right {
+    width: 50%;
+    height: 100%; 
+    object-fit: cover;
+    display: block;
 }
