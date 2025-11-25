@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Thunder";
+  src: url("../assets/fonts/Thunder-BoldLC.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
     /* Fonts */
     --font-logo: "Shrikhand", serif;

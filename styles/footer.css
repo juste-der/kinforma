@@ -503,6 +503,7 @@ footer {
     text-align: center;
     padding: 20px;
     color: white;
+    filter: brightness(50%);
 }
 
 .sustainable .content {
