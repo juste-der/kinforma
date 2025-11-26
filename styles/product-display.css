@@ -13,6 +13,7 @@
 .product-display .top-content h2 {
   font-family: var(--font-thunder);
   font-size: var(--size-h2-mb);
+  padding: 0;
 }
 
 .filter-buttons {

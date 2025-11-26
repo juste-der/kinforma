@@ -3,9 +3,12 @@
   flex-direction: column;
   position: fixed;
   left: 0;
-  height: 600px;
+  top: 92px;
+  height: calc(100vh - 92px);
+  overflow-y: auto;
   width: 0;
   overflow-x: hidden;
+  z-index: 9999;
   transition: width 0.4s ease;
   background: var(--color-white);
 }
@@ -32,9 +35,8 @@
   flex-direction: column;
   background: var(--color-black);
   align-items: center;
-  justify-content: center;
   padding: 1.25rem;
-  height: 100vh;
+  flex-shrink: 0;
   gap: 1.5rem;
   padding-top: 70px;
 }

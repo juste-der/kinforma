@@ -36,10 +36,11 @@
   --size-small: 0.75rem;
 
   /* Colors */
-  --color-bg: #333333; /* Background color */
-  --color-dark: #1f1f1f; /* Dark color */
+  --color-bg: #333333;
+  --color-dark: #1f1f1f;
   --color-white: #fafafa;
   --color-black: #1b1b1b;
   --color-grey: #696969;
   --color-orange: #e50337;
+  --color-grey-dark: #323232;
 }
