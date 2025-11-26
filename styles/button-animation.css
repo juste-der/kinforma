@@ -23,7 +23,7 @@
   padding-right: 70px;
 }
 .button-animation:hover .icon {
-  height: 50%;
+  /* height: 50%; */
   right: 16px;
   opacity: 1;
   transform: translateX(0);

@@ -74,6 +74,11 @@ h2 {
   font-family: var(--font-mono);
 }
 
+.cta-button:hover .icon,
+.sustain-button:hover .icon {
+  height: 50%;
+}
+
 .stay-tuned {
   background-color: var(--color-orange);
   color: #fafafa;
