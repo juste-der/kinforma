@@ -152,12 +152,8 @@
   font-family: var(--font-mono);
 }
 .bottom-products-card button {
-  display: flex;
-  align-items: center;
-  border: none;
   background: transparent;
   font-family: var(--font-mono);
-  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
