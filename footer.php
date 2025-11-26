@@ -42,6 +42,11 @@
       <img src="assets/icons/images/Subtract1.png" alt="Icon 2" />
     </div>
     <p>DAGAR KVAR</p>
+    <button class="desktop-drop-button  button-animation">
+      Stay tuned
+      <svg class="icon">
+        <use href="assets/icons/icons.svg#icon-see-more"></use>
+      </svg>
   </div>
 
 </section>
