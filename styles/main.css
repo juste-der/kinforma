@@ -7,6 +7,8 @@
 @import url("product-display.css");
 @import url("button-animation.css");
 @import url("our-technology.css");
+@import url("carousel.css");
+@import url("media.css");
 
 * {
   box-sizing: border-box;

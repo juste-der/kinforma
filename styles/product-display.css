@@ -155,6 +155,7 @@
 .bottom-products-card button {
   background: transparent;
   font-family: var(--font-mono);
+  border: none;
 }
 
 @media screen and (min-width: 1024px) {
