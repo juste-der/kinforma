@@ -188,6 +188,6 @@
   </div>
 
   <div class="logo-container">
-    <div class="logo"><img src="/assets/icons/images/logowhite.png" /></div>
+    <div class="logo"><img src="assets/icons/images/logowhite.png" /></div>
   </div>
 </footer>

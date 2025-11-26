@@ -99,13 +99,13 @@
 
   <section class="hero">
     <video
-      src="assets/videos/Hero Anim 1 Stående.mp4"
+      src="assets/videos/Hero-standing.mp4"
       autoplay
       muted
       loop
       id="video-mb"></video>
     <video
-      src="assets/videos/Hero Anim 10001-0490.mp4"
+      src="assets/videos/Hero-video.mp4"
       autoplay
       muted
       loop
