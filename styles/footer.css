@@ -463,6 +463,7 @@
   .footer-left {
     flex: 1;
     max-width: 650px;
+    padding-left: 4rem;
   }
   
   .footer-left h2 {
@@ -522,8 +523,8 @@
   }
   
   .footer-right {
-    padding-top: 10px;
-    margin-right: 20px;
+    padding-top: 3rem;
+    margin-right: 3rem;
     flex-shrink: 1; 
     min-width: 0; 
   }
