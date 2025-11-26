@@ -2,7 +2,7 @@ const sidenav = document.getElementById("sidenav");
 const menuToggle = document.getElementById("menuToggle");
 const menuIcon = document.getElementById("menuIcon");
 const closeBtn = document.getElementById("closeNav");
-const languageToggle = document.getElementById("languageToggle");
+const languageToggles = document.querySelectorAll(".language-toggle");
 const header = document.querySelector(".site-header");
 const productsBtn = document.querySelector(".products-btn");
 
@@ -24,8 +24,10 @@ closeBtn.addEventListener("click", (e) => {
   menuIcon.src = "assets/icons/hamburger.svg";
 });
 
-languageToggle.addEventListener("click", () => {
-  languageToggle.classList.toggle("open");
+languageToggles.forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    toggle.classList.toggle("open");
+  });
 });
 
 /*scroll menu */

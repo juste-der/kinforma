@@ -144,6 +144,9 @@
   border: 1px solid var(--color-black);
   border-top: none;
 }
+.bottom-products-card .button-animation {
+  gap: 14px;
+}
 .bottom-products-card h4 {
   font-size: var(--size-h4-mb);
   font-family: var(--font-mono);
@@ -151,7 +154,6 @@
 .bottom-products-card button {
   display: flex;
   align-items: center;
-  gap: 14px;
   border: none;
   background: transparent;
   font-family: var(--font-mono);

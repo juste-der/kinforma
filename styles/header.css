@@ -35,7 +35,6 @@
 .header-logo {
   display: flex;
   flex: 1 0 6rem;
-  margin-left: 3rem;
   font-family: var(--font-logo);
   text-decoration: none;
   color: var(--color-black);

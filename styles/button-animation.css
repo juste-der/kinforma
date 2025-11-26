@@ -1,5 +1,32 @@
 .button-animation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
+  gap: 8px;
+  width: auto;
+  cursor: pointer;
+  border: none;
+  transition: padding 0.35s ease;
+  overflow: hidden;
+}
+.button-animation .icon {
+  position: absolute;
+  right: -40px;
+  width: 42.5px;
+  opacity: 0;
+  transform: translateX(15px);
+  transition: right 0.35s ease, opacity 0.25s ease, transform 0.35s ease;
+}
+
+.button-animation:hover {
+  padding-right: 70px;
+}
+.button-animation:hover .icon {
+  right: 16px;
+  opacity: 1;
+  transform: translateX(0);
 }
 .product-display .button-animation a {
   color: var(--color-black);

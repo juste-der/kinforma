@@ -4,6 +4,9 @@
   align-items: center;
   cursor: pointer;
 }
+.site-header .language-change {
+  display: none;
+}
 
 .language-change .current-lang {
   display: flex;
@@ -35,13 +38,16 @@
 .arrow {
   transition: transform 0.3 ease;
 }
+.language-change .arrow {
+  color: var(--color-white);
+}
 
 .language-change.open .arrow {
   transform: rotate(180deg);
 }
 
 @media screen and (min-width: 1024px) {
-  .language-change {
+  .site-header .language-change {
     display: flex;
   }
 }
