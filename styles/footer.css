@@ -223,7 +223,7 @@ h2 {
 
 /* Sustainable Section */
 .sustainable {
-  background: url("assets/icons/images/Hållbarhet2 1.png") center/cover
+  background: url("../assets/icons/images/Hållbarhet2 1.png") center/cover
     no-repeat;
   display: flex;
   flex-direction: column;
@@ -414,7 +414,7 @@ h2 {
   width: 50%;
   padding: 60px 20px;
   background-color: #f5f5f5;
-  background-image: url(/assets/icons/images/Frame-422.png);
+  background-image: url(../assets/icons/images/Frame-422.png);
 }
 
 .desktop-drop-title {
