@@ -1,12 +1,122 @@
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--color-white);
+}
+
 .header-newsletter {
   font-family: "Inter", sans-serif;
   font-size: var(--size-small);
+  justify-content: center;
   align-items: center;
+  display: flex;
+  height: 28px;
+  background: var(--color-white);
+}
+.header-newsletter a {
+  color: var(--color-black);
+}
+
+.site-header {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  height: 4rem;
+  padding: 0 1.25rem;
+}
+
+.header-logo {
+  display: flex;
+  flex: 1 0 6rem;
+  font-family: var(--font-logo);
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: 1.25rem;
+  font-weight: var(--weight-bold);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.closebtn {
   display: none;
 }
 
-@media screen and (min-width: 600px) {
-  .header-newsletter {
-    display: flex;
+.icon {
+  color: var(--color-black);
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-text,
+.products-btn {
+  display: none;
+  font-family: var(--font-body);
+}
+.products-btn {
+  cursor: pointer;
+}
+
+.search-bar,
+.profile-page,
+.shopping-cart {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .header-wrapper {
+    background: transparent;
+  }
+  .site-header {
+    color: var(--color-white);
+    padding: 0 4rem;
+    height: 4.5rem;
+    gap: 1.5rem;
+  }
+  .site-header a {
+    color: var(--color-white);
+  }
+  .header-wrapper:hover {
+    background: var(--color-white);
+  }
+  .header-wrapper:hover a,
+  .header-wrapper:hover .icon,
+  .header-wrapper:hover .icon-text,
+  .header-wrapper:hover .products-btn {
+    color: var(--color-black);
+  }
+
+  .icon {
+    color: var(--color-white);
+  }
+  .icon-text {
+    display: contents;
+  }
+  .profile-page {
+    margin-right: 1rem;
+  }
+  .header-logo {
+    margin-left: 15rem;
+  }
+  .site-header.scrolled {
+    background: var(--color-white);
+    color: var(--color-black);
+  }
+
+  .site-header.scrolled .header-logo {
+    margin-left: 7.8rem;
+    color: var(--color-black);
+  }
+  .site-header.scrolled .icon {
+    color: var(--color-black);
   }
 }

@@ -4,7 +4,12 @@
   font-weight: 700;
   font-style: normal;
 }
-
+@font-face {
+  font-family: "Thunder";
+  src: url("../assets/fonts/Thunder-SemiBoldLC.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
 :root {
   /* Fonts */
   --font-logo: "Shrikhand", serif;
