@@ -18,6 +18,10 @@
 }
 
 @media (max-width: 768px) {
+    .h2-span{
+        margin-left: 2rem;
+    }
+
     footer {
         padding: 0;
     }
@@ -28,6 +32,7 @@
 
     .footer-mobile {
         display: block;
+        padding-top: 4rem;
     }
 
     .the-drop {
@@ -142,8 +147,7 @@
         font-weight: 600;
         margin: 0;
         padding: 0 1.5rem;
-        letter-spacing: -1px;
-    
+        
     }
     .sustain-header{
         font-size: 2rem;
