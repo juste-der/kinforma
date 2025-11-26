@@ -29,7 +29,6 @@
   --size-h2-mb: 3rem;
   --size-h3: 3rem;
   --size-h4: 1.5rem;
-  --size-h2-mb: 3rem;
   --size-h4-mb: 1.25rem;
   --size-ingress: 1.5rem;
   --size-ingress-mb: 1.125rem;
@@ -43,7 +42,6 @@
   --color-black: #1b1b1b;
   --color-grey: #696969;
   --color-orange: #e50337;
-  --color-red: #f9033c;
 
   /*sizing */
   --header-height: calc(64px + 28px);
