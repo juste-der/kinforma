@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/button-animation.css" />
     <link rel="stylesheet" href="styles/root.css" />
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/footer.css" />
@@ -17,7 +18,7 @@
     <!-- sustainable section desktop -->
     <section class="sustain-section">
       <img
-        src="assets/icons/images/Hållbarhet2-1.png"
+        src="assets/icons/images/Hållbarhet 1.png"
         class="sustain-desktop-img"
       />
       <div class="sustain-content">
@@ -31,12 +32,17 @@
         <h2 class="sustain-header">
           DET ÄR <span class="sustain-sustain-header">HÅLLBARHET.</span>
         </h2>
-        <button class="sustain-button">Vår hållbarhet</button>
+        <button class="sustain-button button-animation">
+            vår teknik
+            <svg class="icon">
+              <use href="assets/icons/icons.svg#icon-see-more"></use>
+            </svg>
+          </button>
       </div>
     </section>
 
     <section class="Urban-performance-section">
-      <h2>URBAN PERFORMANCE</h2>
+        <h2> <span class="h2-span">URBAN PERFORMANCE</span></h2>
       <img
         src="/assets/icons/images/Urban-performance-mobile 1 (1).png"
         class="img-mobile"
@@ -45,7 +51,6 @@
     </section>
 
     <!-- mobile the drop -->
-    <h2>THE DROP</h2>
     <section class="the-drop">
       <img src="assets/icons/images/Bild-blurred 1.png" alt="Background" />
       <img src="assets/icons/images/Eye 2.png" alt="Eye Icon" />
@@ -58,7 +63,6 @@
         <p>DAGAR KVAR</p>
       </div>
 
-      <button class="stay-tuned">Stay Tuned</button>
     </section>
 
     <!-- desktop the drop-->
@@ -74,14 +78,27 @@
           </p>
         </div>
       </div>
-      <img
-        src="/assets/icons/images/drop-background.png"
-        class="desktop-drop-right"
-      />
+      <section class="desktop-drop-right">
+        <h2 class="desktop-drop-title">THE DROP</h2>
+        
+        <div class="desktop-drop-countdown">
+            <div class="countdown-number"><img src="assets/icons/images/date1.png"></div>
+            <div class="countdown-number"><img src="assets/icons/images/date2.png"></div>
+        </div>
+        
+        <p class="desktop-drop-label">DAGAR KVAR</p>
+        
+        <button class="desktop-drop-button  button-animation">
+            Skapa din design
+            <svg class="icon">
+              <use href="assets/icons/icons.svg#icon-see-more"></use>
+            </svg>
+          </button>
+    </section>
     </section>
 
     <div class="container">
-      <h2>VI ÄR KINFORMA</h2>
+      <h2> <span class="h2-span">VI ÄR KINFORMA</span></h2>
 
       <div class="carousel-container">
         <div class="carousel">
@@ -127,7 +144,13 @@
         med dig. Läs mer om vår idé.
       </p>
 
-      <button class="cta-button">Mer om oss</button>
+      <button class="cta-button button-animation">
+        Mer om oss
+        <svg class="icon">
+            <use href="assets/icons/icons.svg#icon-see-more"></use>
+          </svg>
+      </button>
+
     </div>
     <footer>
       <!-- Desktop Layout -->
@@ -140,7 +163,13 @@
           </p>
           <form class="email-form">
             <input type="email" placeholder="exemple@kinforma.com" required />
-            <button type="submit">Registrera</button>
+            <button class="button-animation">
+                vår teknik
+                <svg class="icon">
+                  <use href="assets/icons/icons.svg#icon-see-more"></use>
+                </svg>
+              </button>
+
           </form>
         </div>
         <div class="footer-right">
@@ -180,5 +209,6 @@
         <div class="logo"><img src="/assets/icons/images/logowhite.png" /></div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

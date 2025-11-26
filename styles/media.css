@@ -166,6 +166,8 @@
         }
         .img-desktop {
             display: block !important;
+            margin-bottom: 4rem;
+            
         }
         .the-drop {
             display: none;
@@ -189,3 +191,8 @@
     }
 }
 
+
+.sustain-button .icon,
+.cta-button .icon {
+    color: var(--color-orange);
+}
