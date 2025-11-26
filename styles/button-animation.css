@@ -8,7 +8,7 @@
   width: auto;
   cursor: pointer;
   transition: padding 0.35s ease;
-  overflow: hidden;
+  
 }
 .button-animation .icon {
   position: absolute;

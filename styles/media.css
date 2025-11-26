@@ -19,7 +19,7 @@
 }
 
 /* Mobile and tablet */
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   /* The Drop Mobile */
   .the-drop {
     min-height: 80vh;
@@ -70,9 +70,13 @@
     display: none;
   }
   .footer-mobile {
-    display: block;
-    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
     text-align: center;
+    align-items: center;
+    padding: 4rem 20px 0 20px;
+    
   }
   .email-form-mobile {
     display: flex;
@@ -179,7 +183,7 @@
 }
 
 /* Desktop */
-@media (min-width: 768px) {
+@media (min-width: 1023px) {
   .img-mobile {
     display: none !important;
   }

@@ -171,10 +171,16 @@
       placeholder="exemple@kinforma.com"
       required
       class="mobile-email-submit" />
-    <button type="submit" class="button-email-submit">Registrera</button>
+    <button class="button-email-submit button-animation">
+      Registrera
+      <svg class="icon">
+        <use href="assets/icons/icons.svg#icon-see-more"></use>
+      </svg>
+    </button>
     <div class="copyright">
       © 2025 Kinforma Alla rättigheter<br />förbehållna.
     </div>
+
   </div>
 
   <div class="logo-container">
