@@ -88,35 +88,25 @@
   <div class="carousel-container">
     <div class="carousel">
       <div class="card">
-        <img src="assets/icons/images/Comback.Bag.back.MVP.png" alt="" />
+        <img src="/assets/icons/images/bag.jpg" alt="" />
       </div>
       <div class="card">
-        <img src="assets/icons/images/Comback.Bag.front.MVP.png" />
-      </div>
-      <div class="card">
-        <img
-          src="assets/icons/images/Kinforma_collar&hooded_greyjacket_1.png"
-          alt="" />
-      </div>
-      <div class="card">
-        <img src="assets/icons/images/Kinforma_model_bag.png" alt="" />
+        <img src="/assets/icons/images/unsplash1.jpg" />
       </div>
       <div class="card">
         <img
-          src="assets/icons/images/Termos.preview.flera.MVP.png"
+          src="/assets/icons/images/unsplash2.jpg"
           alt="" />
       </div>
       <div class="card">
-        <img src="assets/icons/images/Kopia av SUNGLASSES.png" alt="" />
-      </div>
-      <div class="card">
-        <img src="assets/icons/images/Comback.Bag.back.MVP.png" alt="" />
+        <img src="/assets/icons/images/unsplash3.jpg" alt="" />
       </div>
       <div class="card">
         <img
-          src="assets/icons/images/Termos.preview.flera.MVP.png"
+          src="/assets/icons/images/unsplash4.png"
           alt="" />
       </div>
+
     </div>
   </div>
 

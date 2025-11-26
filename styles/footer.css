@@ -279,7 +279,7 @@ h2 {
 .sustain-desktop-text,
 .sustain-desktop-text-right {
   max-width: 80%;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 600;
   font-family: var(--font-thunder);
   color: var(--color-grey);
@@ -297,7 +297,7 @@ h2 {
   margin: 0;
   font-family: var(--font-thunder);
   font-weight: var(--weight-bold);
-  font-size: 4rem;
+  font-size: 5rem;
   padding: 0;
 }
 
