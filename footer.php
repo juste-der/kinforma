@@ -26,9 +26,9 @@
 <section class="Urban-performance-section">
   <h2> <span class="h2-span">URBAN PERFORMANCE</span></h2>
   <img
-    src="/assets/icons/images/Urban-performance-mobile 1 (1).png"
+    src="assets/icons/images/Urban-performance-mobile 1 (1).png"
     class="img-mobile" />
-  <img src="/assets/icons/images/Frame 417.jpg" class="img-desktop" />
+  <img src="assets/icons/images/Frame 417.jpg" class="img-desktop" />
 </section>
 
 <!-- mobile the drop -->
