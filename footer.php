@@ -88,22 +88,22 @@
   <div class="carousel-container">
     <div class="carousel">
       <div class="card">
-        <img src="/assets/icons/images/bag.jpg" alt="" />
+        <img src="assets/icons/images/bag.jpg" alt="" />
       </div>
       <div class="card">
-        <img src="/assets/icons/images/unsplash1.jpg" />
+        <img src="assets/icons/images/unsplash1.jpg" />
       </div>
       <div class="card">
         <img
-          src="/assets/icons/images/unsplash2.jpg"
+          src="assets/icons/images/unsplash2.jpg"
           alt="" />
       </div>
       <div class="card">
-        <img src="/assets/icons/images/unsplash3.jpg" alt="" />
+        <img src="assets/icons/images/unsplash3.jpg" alt="" />
       </div>
       <div class="card">
         <img
-          src="/assets/icons/images/unsplash4.png"
+          src="assets/icons/images/unsplash4.png"
           alt="" />
       </div>
 
