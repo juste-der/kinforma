@@ -172,9 +172,6 @@
   }
   
   /* Images */
-  .img-desktop {
-    margin-bottom: 4rem;
-  }
   
   /* Top and Bottom Bars */
   .top-bar {
@@ -213,7 +210,7 @@
   
   .Urban-performance-section img {
     width: 100%;
-    margin: 0;
+    margin-bottom: 4rem;
     height: auto;
     display: block;
     object-fit: cover;
