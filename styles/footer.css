@@ -54,13 +54,12 @@ h1 {
 
 
 footer {
-    background:var( --color-bg);
+    background:var(--color-bg);
     color: white;
     padding: 80px 100px;
     position: relative;
     font-family:var(--font-mono);
 }
-
 
 .footer-desktop {
     display: flex;
@@ -103,6 +102,17 @@ footer {
     font-family: inherit;
 }
 
+.mobile-email-submit {
+    flex: 1;
+    padding: 12px 14px;
+    background: #8a8a8a;
+    border: none;
+    color: #e0e0e0;
+    font-size: 1.05rem;
+    font-family: inherit;
+    margin-bottom: 2rem;
+}
+
 .email-form input::placeholder {
     color: #c0c0c0;
 }
@@ -117,6 +127,19 @@ footer {
     white-space: nowrap;
     color: white;
     font-family: var(--font-mono);
+}
+
+.button-email-submit {
+    padding: 12px 30px;
+    background-color:var(--color-orange);
+    font-size: 1.05rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+    color: white;
+    font-family: var(--font-mono);
+    margin-bottom: 2rem;
 }
 
 .email-form button:hover {
@@ -151,9 +174,14 @@ footer {
     opacity: 0.8;
 }
 
+.footer-mobile {
+    display: none;
+}
+
 .copyright {
     font-size: 1rem;
     line-height: 1.6;
+    margin-top: 2rem;
 }
 .logo-container {
     width: 100%;
@@ -620,4 +648,72 @@ footer {
 
 .sustain-mobile-text {
     display: none;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 40px 20px;
+    }
+
+    .footer-desktop {
+        display: none;
+    }
+
+    .footer-mobile {
+        display: block;
+        text-align: center;
+    }
+
+    .email-form-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 30px;
+        padding: 0 20px;
+    }
+
+    .email-form-mobile input {
+        width: 100%;
+        padding: 14px 20px;
+        background: #8a8a8a;
+        border: none;
+        color: #e0e0e0;
+        font-size: 0.95rem;
+        font-family: inherit;
+        box-sizing: border-box;
+    }
+
+    .email-form-mobile input::placeholder {
+        color: #c0c0c0;
+    }
+
+    .email-form-mobile button {
+        width: 100%;
+        padding: 14px 30px;
+        background-color: var(--color-orange);
+        border: none;
+        font-size: 0.95rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s;
+        color: white;
+        font-family: var(--font-mono);
+    }
+
+    .footer-links {
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 15px;
+    }
+
+    .copyright {
+        margin-bottom: 30px;
+    }
+
+    .logo-container {
+        text-align: center;
+    }
 }
