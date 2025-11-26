@@ -523,7 +523,6 @@
   }
   
   .footer-right {
-    text-align: right;
     padding-top: 10px;
     margin-right: 20px;
     flex-shrink: 1; /* allow shrinking */
